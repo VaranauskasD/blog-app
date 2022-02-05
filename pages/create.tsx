@@ -62,6 +62,7 @@ const StyledButton = styled.button`
   :hover > span {
     background: white;
     color: black;
+    transition: all 0.15s ease;
     outline: 1.5px solid #000;
     outline-offset: -1.5px;
   }
@@ -80,13 +81,13 @@ const Create: NextPage = () => {
     <React.Fragment>
       <Header />
       <ContentContainer>
-        <BlogForm>
+        <BlogForm method="POST">
           <h1>Create Blog</h1>
           <StyledLabel htmlFor="blog-title">Title: </StyledLabel>
           <StyledInput id="blog-title" />
           <StyledLabel htmlFor="blog-body">Content: </StyledLabel>
           <StyledTextArea id="blog-body" />
-          <StyledButton>
+          <StyledButton type="submit">
             <span>Create Blog</span>
           </StyledButton>
         </BlogForm>

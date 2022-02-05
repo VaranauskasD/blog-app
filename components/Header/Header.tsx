@@ -20,6 +20,7 @@ const HomeLink = styled.a`
     outline: 1.5px solid black;
     outline-offset: -1.5px;
     border-radius: 4px;
+    transition: all 0.15s ease;
   }
 `
 
@@ -35,6 +36,7 @@ const CreateLink = styled.a`
     outline: 1.5px solid black;
     outline-offset: -1.5px;
     border-radius: 4px;
+    transition: all 0.15s ease;
   }
 `
 
