@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <React.Fragment>
       <Header />
-      <ContentContainer>Content</ContentContainer>
+      <ContentContainer></ContentContainer>
     </React.Fragment>
   )
 }
