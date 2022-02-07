@@ -6,15 +6,33 @@ import type { NextPage } from 'next'
 
 import { Header } from '../components'
 
-const ContentContainer = styled.div``
+const ContentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+`
+
+const BlogContainer = styled.div`
+  display: flex;
+  flex: 0.5;
+  border-radius: 8px;
+  padding: 0 16px 16px 16px;
+  flex-direction: column;
+  background: #fff;
+  font-size: 12px;
+`
 
 const HeaderSearch = styled.form``
+
+const blogs = []
 
 const Home: NextPage = () => {
   return (
     <React.Fragment>
       <Header />
-      <ContentContainer></ContentContainer>
+      <ContentContainer>
+        <BlogContainer>Test Blog</BlogContainer>
+      </ContentContainer>
     </React.Fragment>
   )
 }
