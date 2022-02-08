@@ -12,7 +12,7 @@ const ContentContainer = styled.div`
   margin-top: 16px;
 `
 
-const BlogContainer = styled.div`
+const BlogsContainer = styled.div`
   display: flex;
   flex: 0.5;
   border-radius: 8px;
@@ -22,16 +22,32 @@ const BlogContainer = styled.div`
   font-size: 12px;
 `
 
+const BlogContainer = styled.a``
+
 const HeaderSearch = styled.form``
 
-const blogs = []
+const blogs = [
+  {
+    _id: '61fe38d6fbf8f41ed4a90438',
+    title: 'Test Blog',
+    author: 'Test User',
+    body: 'This is a test blog.',
+    date: '1644050612750',
+  },
+]
 
 const Home: NextPage = () => {
   return (
     <React.Fragment>
       <Header />
       <ContentContainer>
-        <BlogContainer>Test Blog</BlogContainer>
+        <BlogsContainer>
+          {blogs.map((blog) => (
+            <BlogContainer>
+              {blog.title} {blog.author}
+            </BlogContainer>
+          ))}
+        </BlogsContainer>
       </ContentContainer>
     </React.Fragment>
   )
