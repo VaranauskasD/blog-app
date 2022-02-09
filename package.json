@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "node ./server/server.js"
+    "server": "node ./server/server.ts"
   },
   "dependencies": {
     "@types/mongoose": "^5.11.97",
